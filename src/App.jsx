@@ -1,10 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-3xl font-bold text-amber-200'>hello world</h1>
-    </div>
+    <>
+         <Navbar />
+         <main className='min-h-screen'>
+           <Outlet />
+         </main>
+          <footer>Footer</footer  >
+    </>
   );
 };
 

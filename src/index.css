@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+
+/* global styles */
+
+@theme {
+    --color-primary: #0F62FE;
+    --color-bg: #F2F4F8
+}
+
+body {
+    background-color: var(--color-bg);
+    color: black;
+}
